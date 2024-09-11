@@ -1,0 +1,264 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #E3F0FF;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;  /* Adjusted this line */
+    overflow: auto;
+}
+
+
+.container {
+    width: 70%; 
+    max-width: 500px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5em;
+    margin: 20px 0;
+    text-align: center;
+}
+
+img {
+    max-width: 400px;
+    margin: 20px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background-color: #9256B9;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.4em;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+}
+
+button:hover {
+    background-color: #7E48A3;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-media img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+/* ... Your existing CSS ... */
+
+/* Footer styles */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Quiz button styles */
+#options button {
+    background-color: #FF69B4; /* Light pink */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#options button:hover {
+    background-color: #FF69B4; /* Pink */
+}
+
+#prev-question, #next-question {
+    background-color: #9256B9; /* Blue Violet */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#prev-question:hover, #next-question:hover {
+    background-color: #7E48A3; /* Dark Orchid */
+}
+
+.hidden {
+    display: none;
+}
+
+#progress-bar-container {
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 100%;  /* Ensures it fills the container vertically */
+    width: 0%;     /* Initial state */
+    background-color: #9256B9; /* Your desired color */
+    border-radius: 10px; 
+    transition: width 0.3s ease-in-out;
+}
+
+/* Divider below the question choices */
+#options::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #333; /* Adjust color as needed */
+    margin: 20px 0; /* Adjust padding around the divider */
+}
+
+/* Previous button alignment */
+#prev-question {
+    float: left; /* Align to the left */
+    clear: both; /* Clear any floats to ensure correct display */
+}
+
+/* Next button alignment */
+#next-question {
+    float: right; /* Align to the right */
+}
+
+/* break */
+
+/* Results Section Styling */
+#results-section {
+    max-width: 800px; 
+    margin: 0 auto;  
+    padding: 20px 20px 50px 20px;  /* Adjusted padding to add 50px at the bottom */
+    text-align: center;
+    /* Remove the overflow: hidden; line */
+}
+
+#results-section h2 {
+    font-size: 2.5em;
+    margin-top: 20px; /* Adjusted margin-top */
+    margin-bottom: 20px;
+}
+
+
+#results-section > *:first-child {
+    margin-top: 0; /* Ensures the first child element doesn't have a top margin */
+}
+
+#results-section > *:last-child {
+    margin-bottom: 0; /* Ensures the last child element doesn't have a bottom margin */
+}
+
+/* Result Title Styling */
+#result-type {
+    font-size: 2.5em;  /* Adjusting the font size */
+    text-align: center;  
+    margin: 30px 0 20px;  /* Adjusted margins */
+}
+
+/* Result Description Styling */
+#result-description {
+    line-height: 1.5; 
+    margin-top: 30px;
+}
+
+#result-description ul {
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+    list-style-type: disc;
+}
+
+#result-description li {
+    margin-bottom: 0.5rem;
+}
+
+/* Image Styling */
+#result-image, #cta-image {
+    display: block;
+    margin: 20px auto;
+}
+
+/* CTA Section Styling */
+#cta-section {
+    border-top: 1px solid #e0e0e0; 
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+
+#cta-section h4 {
+    text-align: center;
+    color: #9256B9;
+    font-size: 2em;
+    margin: 0 0 20px;
+}
+
+/* Centering ConvertKit Form and adjusting space */
+#cta-section {
+    text-align: center;
+    flex-direction: column;
+    align-items: center; /* This will center the child elements horizontally */
+}
+
+#cta-section script {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Ensuring it doesn't overflow */
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    
+    /* Add padding around the main content */
+    .quiz-container {
+        padding: 20px;
+    }
+
+    /* Adjust font sizes or other styles as necessary */
+    #landing-page h1, #results-section h2 {
+        font-size: 1.5em;  /* Adjust font size for mobile */
+    }
+
+    /* ... Any other mobile-specific styles ... */
+
+}
+
+img, container, body, html {
+    max-width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling if there's an overflow */
+}
+

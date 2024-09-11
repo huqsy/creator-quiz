@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Creator Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.png" type="image/png">
+    <!-- Add any other meta tags or links you need -->
+</head>
+
+<body>
+    
+    <!-- Landing Page -->
+    <section id="landing-page">
+        <h1>What kind of Content Creator are you?</h1>
+        <p>Want to start creating content, but not sure what you're good at? <br> Maybe you're a writer, streamer, artist, or something else entirely. <br> Take this quiz to find out!</p>
+        <img src="landing-image.png" alt="Landing Image">
+        <button id="start-quiz">Start Quiz</button>
+    </section>
+
+    <!-- Quiz Questions Section -->
+    <section id="quiz-section" class="hidden">
+        <h2>Question <span id="question-number">1</span>/10</h2>
+        <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>        
+        <p id="question-text">When you're at a party, you're most likely to...</p>
+        <div id="options">
+            <!-- We'll populate this with the answer choices using JavaScript -->
+        </div>
+        <button id="prev-question">Previous</button>
+        <button id="next-question">Next</button>
+    </section>
+
+    <!-- Results Page Section -->
+    <section id="results-section" class="hidden">
+        <h2>You are a...</h2>
+        <h3 id="result-type">Written Content Creator! 📝</h3>
+        <p id="result-description">
+            <!-- The quiz result description will be populated here using JavaScript -->
+        </p>
+        <img id="result-image" src="path-to-result-image.jpg" alt="Result Image">
+
+    <script src="quiz.js"></script>
+
+</body>
+
+</html>
